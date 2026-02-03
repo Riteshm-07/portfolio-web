@@ -295,54 +295,65 @@ body {
 }
 
 /* Mobile Phones */
-@media (max-width: 480px) {
-  .navbar {
-    position: static;
-    text-align: center;
-    margin-top: 20px;
-  }
+/* ===================================== */
+/* ===== FONT & SCROLL FIX OVERRIDES ==== */
+/* ===================================== */
 
-  .navbar a {
-    display: inline-block;
-    margin: 10px;
+/* Improve font readability on mobile */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
   }
 
   .content h1 {
-    font-size: 28px;
+    font-size: 40px;
   }
 
-  .section {
-    padding: 50px 20px;
+  .content p,
+  .section p {
+    font-size: 16px;
+    line-height: 1.8;
   }
 
   .section h2 {
-    font-size: 28px;
+    font-size: 32px;
+  }
+}
+
+/* Fix excessive scrolling & gaps on phones */
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
   }
 
-  .skills {
-    gap: 10px;
+  .hero {
+    min-height: auto;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
-  .skills span {
-    font-size: 14px;
-    padding: 10px 15px;
-  }
-
-  .projects {
-    gap: 15px;
-  }
-
-  .project-card {
-    width: 100%;
-    max-width: 300px;
+  .section {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .shapes {
-    width: 220px;
-    height: 220px;
+    margin-top: 20px;
+    margin-bottom: 0;
   }
 
   .square {
-    transform: scale(0.8);
+    animation: none;
+  }
+
+  .content h1 {
+    font-size: 32px;
+  }
+
+  .content p,
+  .section p {
+    font-size: 17px;
   }
 }
+
