@@ -294,66 +294,111 @@ body {
   }
 }
 
-/* Mobile Phones */
-/* ===================================== */
-/* ===== FONT & SCROLL FIX OVERRIDES ==== */
-/* ===================================== */
+/* ============================= */
+/* MOBILE UI FIX LIKE INSTAGRAM  */
+/* ============================= */
 
-/* Improve font readability on mobile */
 @media (max-width: 768px) {
-  body {
-    font-size: 16px;
-  }
 
-  .content h1 {
-    font-size: 40px;
-  }
-
-  .content p,
-  .section p {
-    font-size: 16px;
-    line-height: 1.8;
-  }
-
-  .section h2 {
-    font-size: 32px;
-  }
-}
-
-/* Fix excessive scrolling & gaps on phones */
-@media (max-width: 480px) {
-  body {
+  html, body {
+    width: 100%;
     overflow-x: hidden;
+    font-size: 16px;
   }
 
+  /* HERO FIX */
   .hero {
     min-height: auto;
     height: auto;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 24px 16px;
   }
 
-  .section {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
+  /* REMOVE HUGE BACKGROUND HEIGHT */
+  .background,
   .shapes {
-    margin-top: 20px;
-    margin-bottom: 0;
+    max-height: 300px;
+    overflow: hidden;
   }
 
-  .square {
-    animation: none;
-  }
-
+  /* TEXT SIZE FIX */
   .content h1 {
-    font-size: 32px;
+    font-size: 28px;
+    line-height: 1.3;
   }
 
   .content p,
   .section p {
-    font-size: 17px;
+    font-size: 16px;
+    line-height: 1.7;
   }
+
+  .section h2 {
+    font-size: 22px;
+  }
+
+  /* BUTTON FIX */
+  button,
+  .btn,
+  a.btn {
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 10px;
+  }
+
+  /* ICON SIZE FIX */
+  i, svg {
+    font-size: 22px;
+    width: 22px;
+    height: 22px;
+  }
+
+  /* SECTION GAP FIX */
+  .section {
+    padding: 30px 16px;
+  }
+
+  /* STOP ANIMATIONS CAUSING SCROLL */
+  .square,
+  .shape,
+  .floating {
+    animation: none !important;
+  }
+
+  /* IMAGE RESPONSIVE */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
 }
+
+/* EXTRA SMALL PHONES */
+@media (max-width: 480px) {
+
+  .content h1 {
+    font-size: 24px;
+  }
+
+  .section h2 {
+    font-size: 20px;
+  }
+
+  .content p,
+  .section p {
+    font-size: 15px;
+  }
+
+  button,
+  .btn {
+    width: 100%;
+  }
+
+  /* REMOVE EXTRA SPACE FROM DECOR ELEMENTS */
+  .shapes,
+  .background {
+    display: none;
+  }
+
+}
+
 
