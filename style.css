@@ -322,7 +322,7 @@ body {
 
   /* TEXT SIZE FIX */
   .content h1 {
-    font-size: 48px;
+    font-size: 88px;
     line-height: 1.3;
   }
 
@@ -347,7 +347,7 @@ body {
 
   /* ICON SIZE FIX */
   i, svg {
-    font-size: 48px;
+    font-size: 88px;
     width: 48px;
     height: 48px;
   }
@@ -400,6 +400,7 @@ body {
   }
 
 }
+
 
 
 
