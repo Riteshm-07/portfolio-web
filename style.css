@@ -260,7 +260,7 @@ body {
   width: 50%;
   height: 70%;
   
-  background: #000;
+  
   z-index: 2000;
   display: flex;
   justify-content: center;
@@ -303,6 +303,7 @@ body {
 }
 
 /* ================================================= */
+
 
 
 
