@@ -43,4 +43,14 @@ function typeEffect() {
   setTimeout(typeEffect, isDeleting ? 80 : 120);
 }
 
-typeEffect();
+typeEffect(); 
+
+
+// Close Advertising Banner
+function closeAd() {
+  const banner = document.getElementById("adBanner");
+  banner.style.display = "none";
+  document.body.style.paddingTop = "0";
+}
+
+
