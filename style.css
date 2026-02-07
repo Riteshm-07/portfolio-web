@@ -248,11 +248,60 @@ body {
 
 .social-icons a:hover {
   color: #00e5ff;
+} 
+
+
+
+/* ================================================= */
+/* ========== MOBILE RESPONSIVE ADDITIONS =========== */.ad-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25%;
+  background: #000;
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ad-banner img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+/* Close Button */
+.close-ad {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 4px 10px;
+  border-radius: 50%;
+}
+
+/* Push content down so banner doesn't overlap */
+body {
+  padding-top: 200px;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .ad-banner img {
+    max-height: 140px;
+  }
+
+  body {
+    padding-top: 140px;
+  }
 }
 
 /* ================================================= */
-/* ========== MOBILE RESPONSIVE ADDITIONS =========== */
-/* ================================================= */
+
 
 
 
